@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font: #5c6a5b;
+    --white: #4e5d51;
+    --GreenBlck: #07182e;
+    --Grey: #70758b;
+    --obscuro: #1d262c;
+    --RGB: #000008;
+    --white-blue: #778eac;
+    --Medium: #375a848a;
+    --Gray: #141c24;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    background: var(--white);
+}
+
+::selection {
+    background: var(--GreenBlck);
+    color: var(--white);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+       margin: 40px 0 0 40px;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    background: var(--white);
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.encriptador {
+    width: 60%;
+    margin: 40px auto;
+    position: relative;
+    background: transparent;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.encriptar {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    outline: none;
+    border: 1px solid var(--Grey);
+    border-radius: 15px;
+    resize: none;
+}
+
+.encriptar::placeholder {
+    color: var(--GreenBlck);
+}
+
+.encriptar:focus::placeholder {
+    color: var(--GreenBlck);
+}
+
+.aviso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: relative;
+    top: auto;
+}
+
+.texto-aviso {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--GreenBlck);
+}
+
+.encriptador-e {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 10px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.btn-encriptar,
+.btn-desencriptar {
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--GreenBlck);
+    border: 1px solid var(--Grey);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--Grey);
+}
+
+.btn-encriptar:active {
+    box-shadow: inset 0px 10px 20px var(--RGB), inset -3px -4px 8px var(--font);
+    color: var(--Medium);
+}
+
+.btn-desencriptar:active {
+    box-shadow: inset 0px 10px 20px var(--Grey), inset -3px -4px 8px var(--font);
+    color: var(--Medium);
+}
+
+.btn-copiar {
+    width: 66px;
+    height: 36px;
+    margin: 23px;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    padding: 6px;
+    font-size: 16px;
+    color: var(--white);
+    line-height: 19px;
+    text-align: center;
+    background: var(--GreenBlck);
+    border: 1px solid var(--Grey);
+    border-radius: 20px;
+    cursor: pointer;
+    }
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.btn-copiar:hover {
+    transform: scale(0.97);
+}
+
+.tarjeta {
+    width: 270px;
+    height: 500px;
+    background: var(--font);
+    box-shadow: 10px 24px 32px -8px var(--Gray);
+    position: relative;
+    margin: 40px auto;
+    margin-top: 80px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.contenedor-t {
+    width: 90%;
+    margin: o auto;
+    margin-top: 50%;
+    background-color: var(--font);    
+}
+
+.img-doll {
+    background: var(--font);
+}
+
+.texto-uno {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--Gray);
+    background: var(--font);
+}
+
+.texto-dos {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--Gray);
+    background: var(--font);
+}
+
+.evaluar {
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--Gray);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.evaluar:focus {
+    outline: none;
+}
+
+footer {
+    padding: 20px;
+    border-top: 2px solid var(--font);
+    color: var(--Gray);
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 3px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.linked:hover {
+    color: var(--font);
+    opacity: 0.8;
+}
+
+.git:hover {
+    color: var(--font);
+    opacity: 0.6;
+}
+
+@media(max-width: 1250px) {
+    main {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador {
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador-e {
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .aviso {
+        position: inherit;
+        margin: 15px;
+    }   
+
+    .tarjeta {
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .contenedor-t {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .img-doll {
+        display: none;
+    }
+
+    .btn-copiar {
+        position: inherit;
+        width: 100%;
+    }
+
+    .evaluar {
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 720px) {
+    header .logo {
+        width: 100%;
+        background: var(--white);
+        padding: 2px;
+    }
+
+    .encriptador {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .encriptar {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .encriptador-e {
+        display: grid;
+        gap: 21px;
+    }
+
+    .tarjeta {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .copyright {
+        font-size: 20px;
+    }
+}

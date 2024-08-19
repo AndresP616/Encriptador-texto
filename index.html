@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img src="./img/Logo.png" alt="Logo Alura" class="logo">
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder="Ingresar Texto aqui"></textarea>
+            <div class="aviso">
+                <img src="./img/Exclamacion.png" alt="Importante Imagen" class="img-aviso">
+                <p class="texto-aviso">Solo letras minusculas y sin acento</p>
+            </div>
+            <div class="encriptador-e">
+                <button type="submit" class="btn-encriptar">Encriptar</button>
+                <button type="submit" class="btn-desencriptar">Desencriptar</button>                
+            </div>   
+        </section>
+        <section class="tarjeta">
+            <div class="contenedor-t">
+                <img src="./img/Doll.png" alt="Imagen desencriptador" class="img-doll" >
+                <p class="texto-uno">Ningun texto encontrado</p>
+                <p class="texto-dos">Ingrese texto que desea encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="btn-copiar">copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; copyright 2024 Encriptador de texto - Desarrollado por AndresP</p>
+        <a href="https://github.com/AndresP616" rel="noopener noreferrer" target="_blank">
+            <img src="./img/github.svg" alt="Logo Github" class="github"></a>
+    </footer> 
+<script src="/script.js"></script>       
+</body>
+</html>
